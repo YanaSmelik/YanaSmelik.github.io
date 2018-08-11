@@ -1,0 +1,29 @@
+// write your code here
+var img = new SimpleImage ("duke_blue_devil.png");
+
+function swapBY (x){
+    var newRed = x.setRed(255);
+    var newGreen = x.setGreen(255);
+    var newBlue = x.setBlue(0);
+    var oldBlue = x.getBlue();
+    }
+
+for (var pixel of img.values()) {
+   if ((pixel.getRed() === 0) && (pixel.getGreen() === 51) && (pixel.getBlue() === 227)) {
+       swapBY(pixel);
+}
+}
+
+print (img);
+
+//function swap(x) {
+  //  var newGreen =  x.getRed();
+   // var newRed = x.getGreen ();
+   // x.setGreen(newGreen);
+   // x.setRed(newRed);
+//}
+
+//for (var pixel of img.values()) {
+ // swap (pixel);
+//}
+   // print (img);
